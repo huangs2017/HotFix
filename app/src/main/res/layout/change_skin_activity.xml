@@ -1,0 +1,41 @@
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:tag="skin:background:main_bg">
+
+    <ListView
+        android:id="@+id/id_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff"
+        android:padding="16dp" />
+
+    <FrameLayout
+        android:id="@+id/id_left_menu_container"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:background="#B0E2FF"
+        android:layout_gravity="start" />
+
+    <TextView
+        android:id="@+id/txt_right"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:background="#808080"
+        android:gravity="center"
+        android:textColor="@color/menu_item_text_color"
+        android:textSize="16sp"
+        android:text="测试动态增加View"
+        android:onClick="txtClick"
+        android:tag="skin:textColor:menu_item_text_color"
+        android:layout_gravity="end"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+<!--
+    DrawerLayout 有2-3个元素，
+    android:layout_gravity="start" 左边滑出
+    android:layout_gravity="end"   右边滑出
+-->
